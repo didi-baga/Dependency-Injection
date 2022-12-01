@@ -7,6 +7,7 @@ namespace SampleClasses.Logic.SubLogic
     {
         private IConnection connection;
         private IConfiguration configuration;
+        private string connectionData = "none";
 
         public RateCalculatorExtended(IConnection con, IConfiguration conf) 
         {
@@ -22,15 +23,15 @@ namespace SampleClasses.Logic.SubLogic
 
         public double Calculate()
         {
-            double rate = 0;
-
             connection.Connect();
 
-            rate = 10 * connection.GetCoeficient();
+            double rate = 10 * connection.GetCoeficient(connectionData);
 
             connection.Disconnect();
 
             return rate;
         }
+
+        public void SetConnectionData(string connData) => connectionData = connData;
     }
 }

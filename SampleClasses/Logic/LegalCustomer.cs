@@ -17,6 +17,8 @@ namespace SampleClasses.Logic
 
             if (configuration.isConsoleOutputEnabled)
                 Console.WriteLine("Legal Customer was created");
+
+            rateCalculator.SetConnectionData("Legal Customer");
         }
 
         public double CalculateRate()

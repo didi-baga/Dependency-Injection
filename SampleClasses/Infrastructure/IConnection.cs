@@ -4,7 +4,7 @@
     {
         void Connect();
 
-        double GetCoeficient();
+        double GetCoeficient(string ConnectionData);
 
         void Disconnect();
     }

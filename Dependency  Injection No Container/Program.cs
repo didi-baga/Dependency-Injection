@@ -9,11 +9,9 @@ var rateCalculatorExtended = new RateCalculatorExtended(connection, configuratio
 
 for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine($"Iteration Step: {i}");
+    Console.WriteLine($"\nIteration Step: {i}");
 
     var retailCustomer = new RetailCustomer(rateCalculatorExtended, configuration);
 
     retailCustomer.CalculateRate();
-
-    Console.WriteLine($"\n");
 }

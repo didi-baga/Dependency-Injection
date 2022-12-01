@@ -4,13 +4,13 @@ namespace SampleClasses.Infrastructure
 {
     public class TCPConnection : IConnection
     {
-        private IConfiguration configuration;
+        private readonly IConfiguration configuration;
 
         public TCPConnection(IConfiguration conf)
         {
             configuration = conf;
 
-            if(configuration.isSleepEnabled)
+            if (configuration.isSleepEnabled)
                 Thread.Sleep(1000);
 
             if (configuration.isConsoleOutputEnabled)
@@ -29,8 +29,11 @@ namespace SampleClasses.Infrastructure
                 Thread.Sleep(200);
         }
 
-        public double GetCoeficient()
+        public double GetCoeficient(string ConnectionData)
         {
+            if (configuration.isConsoleOutputEnabled)
+                Console.WriteLine($"TCPConnection.ConnectionData = {ConnectionData}");
+
             return 3.14;
         }
     }

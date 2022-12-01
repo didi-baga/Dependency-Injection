@@ -8,5 +8,5 @@ for (int i = 0; i < args.Length; i++)
     Process.Start("CMD.exe", args[i]);
 
     watch.Stop();
-    Console.WriteLine($"\n\n\n Arg[{i}] = [{args[i]}] Execution Time: {watch.ElapsedMilliseconds} ms \n\n\n\n\n\n");
+    Console.WriteLine($"\n\n\n Arg[{i}] = [{args[i]}] Execution Time: {watch.ElapsedMilliseconds} ms \n\n\n");
 }
