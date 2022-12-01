@@ -1,21 +1,32 @@
-﻿namespace SampleClasses.Infrastructure
+﻿using SampleClasses.Configuration;
+
+namespace SampleClasses.Infrastructure
 {
     public class TCPConnection : IConnection
     {
-        public TCPConnection()
+        private IConfiguration configuration;
+
+        public TCPConnection(IConfiguration conf)
         {
-            Thread.Sleep(1000);
-            Console.WriteLine("TCP Connection was created");
+            configuration = conf;
+
+            if(configuration.isSleepEnabled)
+                Thread.Sleep(1000);
+
+            if (configuration.isConsoleOutputEnabled)
+                Console.WriteLine("TCP Connection was created");
         }
 
         public void Connect()
         {
-            Thread.Sleep(200);
+            if (configuration.isSleepEnabled)
+                Thread.Sleep(200);
         }
 
         public void Disconnect()
         {
-            Thread.Sleep(200);
+            if (configuration.isSleepEnabled) 
+                Thread.Sleep(200);
         }
 
         public double GetCoeficient()

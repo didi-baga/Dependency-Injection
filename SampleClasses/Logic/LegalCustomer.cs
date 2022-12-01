@@ -1,16 +1,22 @@
-﻿using SampleClasses.Logic.SubLogic;
+﻿using SampleClasses.Configuration;
+using SampleClasses.Logic.SubLogic;
 
 namespace SampleClasses.Logic
 {
     public class LegalCustomer : ICustomer
     {
         private IRateCalculator rateCalculator;
-        public LegalCustomer(IRateCalculator calculator)
+        private IConfiguration configuration;
+        public LegalCustomer(IRateCalculator calculator, IConfiguration conf)
         {
             rateCalculator = calculator;
-            Thread.Sleep(500);
+            configuration = conf;
 
-            Console.WriteLine("Legal Customer was created");
+            if(configuration.isSleepEnabled)
+                Thread.Sleep(500);
+
+            if (configuration.isConsoleOutputEnabled)
+                Console.WriteLine("Legal Customer was created");
         }
 
         public double CalculateRate()

@@ -1,15 +1,20 @@
-﻿using SampleClasses.Infrastructure;
+﻿using SampleClasses.Configuration;
+using SampleClasses.Infrastructure;
 
 namespace SampleClasses.Logic.SubLogic
 {
     public class RateCalculatorStandard
     {
         private IConnection connection;
-        public RateCalculatorStandard(IConnection con)
+        private IConfiguration configuration;
+
+        public RateCalculatorStandard(IConnection con, IConfiguration conf)
         {
             connection = con;
+            configuration = conf;
 
-            Console.WriteLine("Rate Calculator Standard was created");
+            if(configuration.isSleepEnabled)
+                Console.WriteLine("Rate Calculator Standard was created");
         }
 
         public double Calculate()

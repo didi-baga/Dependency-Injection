@@ -1,15 +1,19 @@
-﻿using SampleClasses.Logic.SubLogic;
+﻿using SampleClasses.Configuration;
+using SampleClasses.Logic.SubLogic;
 
 namespace SampleClasses.Logic
 {
     public class RetailCustomer : ICustomer
     {
         private IRateCalculator rateCalculator;
-        public RetailCustomer(IRateCalculator calculator)
+        private IConfiguration configuration;
+        public RetailCustomer(IRateCalculator calculator, IConfiguration conf)
         {
             rateCalculator = calculator;
+            configuration = conf;
 
-            Console.WriteLine("Retail Customer was created");
+            if (configuration.isConsoleOutputEnabled)
+                Console.WriteLine("Retail Customer was created");
         }
 
         public double CalculateRate()

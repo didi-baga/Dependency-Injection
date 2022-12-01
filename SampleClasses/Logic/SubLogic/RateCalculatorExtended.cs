@@ -1,16 +1,23 @@
-﻿using SampleClasses.Infrastructure;
+﻿using SampleClasses.Configuration;
+using SampleClasses.Infrastructure;
 
 namespace SampleClasses.Logic.SubLogic
 {
     public class RateCalculatorExtended : IRateCalculator
     {
         private IConnection connection;
-        public RateCalculatorExtended(IConnection con) 
+        private IConfiguration configuration;
+
+        public RateCalculatorExtended(IConnection con, IConfiguration conf) 
         {
             connection = con;
-            Thread.Sleep(1000);
+            configuration = conf;
 
-            Console.WriteLine("Rate Calculator Extended was created");
+            if(configuration.isSleepEnabled)
+                Thread.Sleep(1000);
+
+            if (configuration.isConsoleOutputEnabled)
+                Console.WriteLine("Rate Calculator Extended was created");
         }
 
         public double Calculate()

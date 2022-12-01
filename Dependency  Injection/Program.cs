@@ -1,15 +1,17 @@
 ﻿using SampleClasses.Logic;
 using SampleClasses.Logic.SubLogic;
 using SampleClasses.Infrastructure;
+using SampleClasses.Configuration;
 
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((_, services) =>
-        services.AddTransient<IConnection, TCPConnection>()
+        services.AddTransient<IConfiguration, Configuration>()
+        .AddTransient<IConnection, TCPConnection>()
         .AddTransient<IRateCalculator, RateCalculatorExtended>()
-        .AddSingleton<ICustomer, RetailCustomer>())
+        .AddTransient<ICustomer, RetailCustomer>())
     .Build();
 
 for (int i = 0; i < 10; i++)
