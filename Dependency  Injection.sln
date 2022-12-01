@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency  Injection", "Dependency  Injection\Dependency  Injection.csproj", "{612D73EB-148B-49A8-BF6F-3BC31F30A265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dependency  Injection", "Dependency  Injection\Dependency  Injection.csproj", "{612D73EB-148B-49A8-BF6F-3BC31F30A265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleClasses", "SampleClasses\SampleClasses.csproj", "{64891F4A-2ACD-4CDC-A1C8-E2B36A9F4A1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execution Time Calculator", "Execution Time Calculator\Execution Time Calculator.csproj", "{4945543D-8E71-4A85-AAB3-A8E947A9BBF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency  Injection No Container", "Dependency  Injection No Container\Dependency  Injection No Container.csproj", "{30C2C8C7-769F-45C5-B2A1-F469158D4D52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{612D73EB-148B-49A8-BF6F-3BC31F30A265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{612D73EB-148B-49A8-BF6F-3BC31F30A265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{612D73EB-148B-49A8-BF6F-3BC31F30A265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64891F4A-2ACD-4CDC-A1C8-E2B36A9F4A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64891F4A-2ACD-4CDC-A1C8-E2B36A9F4A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64891F4A-2ACD-4CDC-A1C8-E2B36A9F4A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64891F4A-2ACD-4CDC-A1C8-E2B36A9F4A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4945543D-8E71-4A85-AAB3-A8E947A9BBF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4945543D-8E71-4A85-AAB3-A8E947A9BBF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4945543D-8E71-4A85-AAB3-A8E947A9BBF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4945543D-8E71-4A85-AAB3-A8E947A9BBF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C2C8C7-769F-45C5-B2A1-F469158D4D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C2C8C7-769F-45C5-B2A1-F469158D4D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C2C8C7-769F-45C5-B2A1-F469158D4D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C2C8C7-769F-45C5-B2A1-F469158D4D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
