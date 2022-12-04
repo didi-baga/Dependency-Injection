@@ -2,7 +2,7 @@
 
 namespace SampleClasses.GlobalLogic
 {
-    internal class SampleAdmin : IAdmin
+    public class SampleAdmin : IAdmin
     { 
         private readonly IConfiguration configuration;
 

@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace SampleClasses.Infrastructure
+﻿namespace SampleClasses.Infrastructure
 {
     public interface IConnection
     {

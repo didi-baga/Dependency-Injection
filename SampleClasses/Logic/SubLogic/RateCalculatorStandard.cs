@@ -2,7 +2,7 @@
 using SampleClasses.Infrastructure;
 
 namespace SampleClasses.Logic.SubLogic
-{
+{ 
     public class RateCalculatorStandard
     {
         private IConnection connection;
