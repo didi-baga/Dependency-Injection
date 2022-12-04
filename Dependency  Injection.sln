@@ -5,11 +5,21 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dependency  Injection", "Dependency  Injection\Dependency  Injection.csproj", "{612D73EB-148B-49A8-BF6F-3BC31F30A265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleClasses", "SampleClasses\SampleClasses.csproj", "{64891F4A-2ACD-4CDC-A1C8-E2B36A9F4A1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample Classes", "SampleClasses\Sample Classes.csproj", "{64891F4A-2ACD-4CDC-A1C8-E2B36A9F4A1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execution Time Calculator", "Execution Time Calculator\Execution Time Calculator.csproj", "{4945543D-8E71-4A85-AAB3-A8E947A9BBF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Execution Time Calculator", "Execution Time Calculator\Execution Time Calculator.csproj", "{4945543D-8E71-4A85-AAB3-A8E947A9BBF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency  Injection No Container", "Dependency  Injection No Container\Dependency  Injection No Container.csproj", "{30C2C8C7-769F-45C5-B2A1-F469158D4D52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dependency  Injection No Container", "Dependency  Injection No Container\Dependency  Injection No Container.csproj", "{30C2C8C7-769F-45C5-B2A1-F469158D4D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isolation", "Isolation\Isolation.csproj", "{5026F403-77A7-4534-B7BD-CC5FB51C9AF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isolation No Container", "Isolation No Container\Isolation No Container.csproj", "{5AEC8468-6DCE-4DB7-B98B-FE1EB0982951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Explicit Dependency", "Explicit Dependency\Explicit Dependency.csproj", "{A5A5AED6-FB8C-406B-8571-C80B22C8EF3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Performance", "Performance\Performance.csproj", "{2AF2ACC7-ABC5-4817-803C-B9F9A077A28C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Performance No Container", "Performance No Container\Performance No Container.csproj", "{EB913BAC-3489-4279-931F-E0B57A3FCE71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +43,26 @@ Global
 		{30C2C8C7-769F-45C5-B2A1-F469158D4D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30C2C8C7-769F-45C5-B2A1-F469158D4D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30C2C8C7-769F-45C5-B2A1-F469158D4D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5026F403-77A7-4534-B7BD-CC5FB51C9AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5026F403-77A7-4534-B7BD-CC5FB51C9AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5026F403-77A7-4534-B7BD-CC5FB51C9AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5026F403-77A7-4534-B7BD-CC5FB51C9AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AEC8468-6DCE-4DB7-B98B-FE1EB0982951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AEC8468-6DCE-4DB7-B98B-FE1EB0982951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AEC8468-6DCE-4DB7-B98B-FE1EB0982951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AEC8468-6DCE-4DB7-B98B-FE1EB0982951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A5AED6-FB8C-406B-8571-C80B22C8EF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A5AED6-FB8C-406B-8571-C80B22C8EF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A5AED6-FB8C-406B-8571-C80B22C8EF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A5AED6-FB8C-406B-8571-C80B22C8EF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF2ACC7-ABC5-4817-803C-B9F9A077A28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF2ACC7-ABC5-4817-803C-B9F9A077A28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF2ACC7-ABC5-4817-803C-B9F9A077A28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF2ACC7-ABC5-4817-803C-B9F9A077A28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB913BAC-3489-4279-931F-E0B57A3FCE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB913BAC-3489-4279-931F-E0B57A3FCE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB913BAC-3489-4279-931F-E0B57A3FCE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB913BAC-3489-4279-931F-E0B57A3FCE71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

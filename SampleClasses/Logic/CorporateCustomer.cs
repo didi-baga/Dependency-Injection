@@ -19,7 +19,7 @@ namespace SampleClasses.Logic
             if (configuration.isConsoleOutputEnabled)
                 Console.WriteLine("Corporate Customer was created");
 
-            rateCalculator.SetConnectionData("Corporate Customer");
+            rateCalculator.SetClientData("Corporate Customer");
         }
 
         public double CalculateRate()

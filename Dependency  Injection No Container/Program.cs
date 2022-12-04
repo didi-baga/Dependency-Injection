@@ -3,7 +3,7 @@ using SampleClasses.Logic.SubLogic;
 using SampleClasses.Infrastructure;
 using SampleClasses.Configuration;
 
-var configuration = new Configuration();
+var configuration = new Configuration() { ConnectionString = "My Conneection String" };
 var connection = new TCPConnection(configuration);
 var rateCalculatorExtended = new RateCalculatorExtended(connection, configuration);
 

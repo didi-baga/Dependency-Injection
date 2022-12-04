@@ -15,7 +15,7 @@ namespace SampleClasses.Logic
             if (configuration.isConsoleOutputEnabled)
                 Console.WriteLine("Retail Customer was created");
 
-            rateCalculator.SetConnectionData("Retail Customer");
+            rateCalculator.SetClientData("Retail Customer");
         }
 
         public double CalculateRate()

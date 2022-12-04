@@ -5,5 +5,7 @@
         bool isSleepEnabled { get; set; }
 
         bool isConsoleOutputEnabled { get; set; }
+
+        public string? ConnectionString { get; set; }
     }
 }

@@ -2,7 +2,8 @@
 {
     public interface IRateCalculator
     {
-        void SetConnectionData(string ConnectionData);
+        void SetClientData(string clientData);
+
         double Calculate();
     }
 }

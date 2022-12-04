@@ -8,7 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((_, services) =>
-        services.AddTransient<IConfiguration, Configuration>()
+        services.AddTransient<IConfiguration, Configuration>( conf => { 
+            return new Configuration() { ConnectionString = "My Conneection String" }; 
+        })
         .AddTransient<IConnection, TCPConnection>()
         .AddTransient<IRateCalculator, RateCalculatorExtended>()
         .AddTransient<ICustomer, RetailCustomer>())
