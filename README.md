@@ -42,11 +42,11 @@ Class list and short description:
         * RateCalculatorStandard - Implements *IRateCalculator*, uses IConnection to communicate with service.
 
 **Class Dependencies:** 
- * CorporateCustomer, LegalCustomer and RetailCustomer requre 
+ * CorporateCustomer, LegalCustomer and RetailCustomer require 
     * IRateCalculator and IConfiguration interface objects
-* RateCalculatorExtended and RateCalculatorStandard requre
+* RateCalculatorExtended and RateCalculatorStandard require
     * IConnection interface objects
-* SampleAdmin requre
+* SampleAdmin require
     * IConfiguration  interface objects
 
 ## Implementation 
