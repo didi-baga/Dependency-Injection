@@ -2,23 +2,23 @@
 
 ## Overview
 
-Collection of projects to play with, Use to explore and gain understanding of Dependency Injection principle using C#.
+Collection of projects to play with, Use to explore and gain an understanding of the Dependency Injection principle using C#.
 
 ## Case of Study
 
-Goal is to explore:
+The goal is to explore the following:
 
 - Service lifetimes
 - Explicit Dependency
 - Isolation
 - Performance
 
-For each topic new project will be provided and all of them will use **Sample Classes**.
+For each topic, a new project will be provided and all of them will use **Sample Classes**.
 
 ## Sample Classes
 
-Contains Interfaces and dependent classes to simulate various cases.
-**Note:** Sleep timer will be used to simulate time consuming operations.
+Sample Classes contain Interfaces and dependent classes to simulate various cases.
+**Note:** Sleep timer will simulate time-consuming operations.
 
 Class list and short description:
 
@@ -27,22 +27,22 @@ Class list and short description:
     * Configuration - Implements *IConfiguration*
 * **GlobalLogic**
     * IAdmin - interface for configuration change 
-    * SampleAdmin - Implements *IAdmin*. Set Globaly (Singletone) avaliable *Configuration*
+    * SampleAdmin - Implements *IAdmin*. Set Globally (Singletone) available *Configuration*
 * **Infrastructure**
     * IConnection - interface for communication 
-    * TCPConnection - Implements *IConnection*. Imitates TCP/IP Connection. In time consuming operations Sleep timer is used. 
+    * TCPConnection - Implements *IConnection*. Imitates TCP/IP Connection. In time-consuming operations Sleep timer is used. 
 * **Logic** 
     * ICustomer - Interface for customer class. All Derived classes depend on **Sub Logic** classes. 
-    * CorporateCustomer - Implements *ICustomer*. Imitates Corporate Customer. In time consuming operations Sleep timer is used. 
-    * LegalCustomer - Implements *ICustomer*. Imitates Legal Customer. In time consuming operations Sleep timer is used. 
+    * CorporateCustomer - Implements *ICustomer*. Imitates Corporate Customer. In time-consuming operations Sleep timer is used. 
+    * LegalCustomer - Implements *ICustomer*. Imitates Legal Customer. In time-consuming operations Sleep timer is used. 
     * RetailCustomer - Implements *ICustomer*. Imitates Retail Customer.
     * **SubLogic**
-        * IRateCalculator - interface for busness Logic.
-        * RateCalculatorExtended - Implements *IRateCalculator*, uses IConnection to communicate with service. In time consuming operations Sleep timer is used. 
+        * IRateCalculator - interface for business Logic.
+        * RateCalculatorExtended - Implements *IRateCalculator*, uses IConnection to communicate with service. In time-consuming operations Sleep timer is used. 
         * RateCalculatorStandard - Implements *IRateCalculator*, uses IConnection to communicate with service.
 
 **Class Dependencies:** 
- * CorporateCustomer, LegalCustomer and RetailCustomer require 
+ * CorporateCustomer, LegalCustomer, and RetailCustomer require 
     * IRateCalculator and IConfiguration interface objects
 * RateCalculatorExtended and RateCalculatorStandard require
     * IConnection interface objects
@@ -53,17 +53,17 @@ Class list and short description:
 
 ### Service lifetimes
 
-**Dependency  Injection** and **Dependency  Injection No Container** projects can be used to experiment whit *service lifetime* 
+**Dependency Injection** and **Dependency Injection No Container** projects can be used to experiment with *service lifetime*
     
 ### Explicit Dependency
 
-**Explicit Dependency** project can be used to explore Explicit Dependencies Principle 
+**Explicit Dependency** project can be used to explore the Explicit Dependencies Principle 
 
 ### Isolation
 
-**Isolation No Container** and **Isolation** projects can be used to what kind of side effect can have singleton object. 
+**Isolation No Container** and **Isolation** projects can be used to explore what kind of side effects can have on singleton objects.  
 
 ### Performance
 
-**Performance No Container**, **Performance** and **Execution Time Calculator** projects whill provide performance information. 
+**Performance No Container**, **Performance** and **Execution Time Calculator** project can provide performance information.
     
