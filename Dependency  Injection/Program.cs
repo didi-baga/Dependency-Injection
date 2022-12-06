@@ -16,10 +16,12 @@ using IHost host = Host.CreateDefaultBuilder(args)
         .AddTransient<ICustomer, RetailCustomer>())
     .Build();
 
+//var scope = host.Services.CreateScope();
 for (int i = 0; i < 10; i++)
 {
     Console.WriteLine($"\nIteration Step: {i}");
 
+    //var retailCustomer = scope.ServiceProvider.GetRequiredService<ICustomer>();
     var retailCustomer = host.Services.GetRequiredService<ICustomer>();
 
     retailCustomer.CalculateRate();
